@@ -1,0 +1,6 @@
+{
+  "name": "DRISHTI - Intelligent Land Record Digitization",
+  "description": "Intelligent land record digitization, multilingual OCR/HTR extraction, rule validation, verification workspace, GIS parcel mapping, and DILRMP sync system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1350" width="1000" height="1350" style="background:#fcfbf7; font-family:'Segoe UI', Arial, sans-serif;">
+  <rect x="25" y="25" width="950" height="1300" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+  <rect x="35" y="35" width="930" height="1280" fill="none" stroke="#94a3b8" stroke-width="1"/>
+  
+  <g transform="translate(500, 75)" text-anchor="middle">
+    <circle cx="0" cy="15" r="28" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text y="20" font-size="22" font-weight="bold" fill="#1e3a8a">🏛️</text>
+    <text y="60" font-size="16" font-weight="bold" fill="#0f172a" letter-spacing="1">GOVERNMENT OF INDIA / भारत सरकार</text>
+    <text y="80" font-size="13" fill="#334155">Department of Land Resources (DoLR) / भूमी संसाधन विभाग</text>
+    <text y="105" font-size="20" font-weight="bold" fill="#1e3a8a" text-decoration="underline">INTELLIGENT LAND RECORD DIGITIZATION (DRISHTI)</text>
+    <text y="125" font-size="12" fill="#64748b">Verified Cadastral Revenue Document Repository</text>
+  </g>
+
+  <!-- Location Table -->
+  <g transform="translate(50, 220)">
+    <rect x="0" y="0" width="900" height="70" fill="#f8fafc" stroke="#1e3a8a" stroke-width="1.5"/>
+    <line x1="225" y1="0" x2="225" y2="70" stroke="#1e3a8a"/>
+    <line x1="450" y1="0" x2="450" y2="70" stroke="#1e3a8a"/>
+    <line x1="675" y1="0" x2="675" y2="70" stroke="#1e3a8a"/>
+    <text x="110" y="25" text-anchor="middle" font-size="12" fill="#64748b">State</text>
+    <text x="110" y="52" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">Maharashtra</text>
+    <text x="337" y="25" text-anchor="middle" font-size="12" fill="#64748b">District</text>
+    <text x="337" y="52" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">Pune</text>
+    <text x="562" y="25" text-anchor="middle" font-size="12" fill="#64748b">Tehsil</text>
+    <text x="562" y="52" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">Haveli</text>
+    <text x="787" y="25" text-anchor="middle" font-size="12" fill="#64748b">Village</text>
+    <text x="787" y="52" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">Wagholi / Koregaon</text>
+  </g>
+
+  <!-- Parcel Data -->
+  <g transform="translate(50, 310)">
+    <rect x="0" y="0" width="900" height="90" fill="#f1f5f9" stroke="#1e3a8a" stroke-width="1.5"/>
+    <line x1="225" y1="0" x2="225" y2="90" stroke="#1e3a8a"/>
+    <line x1="450" y1="0" x2="450" y2="90" stroke="#1e3a8a"/>
+    <line x1="675" y1="0" x2="675" y2="90" stroke="#1e3a8a"/>
+    <text x="112" y="30" text-anchor="middle" font-size="12" fill="#64748b">Survey Number</text>
+    <text x="112" y="65" text-anchor="middle" font-size="22" font-weight="bold" fill="#0f172a">188/2</text>
+    <text x="337" y="30" text-anchor="middle" font-size="12" fill="#64748b">Khasra / Khata No</text>
+    <text x="337" y="65" text-anchor="middle" font-size="20" font-weight="bold" fill="#0f172a">1029</text>
+    <text x="562" y="30" text-anchor="middle" font-size="12" fill="#64748b">Area</text>
+    <text x="562" y="65" text-anchor="middle" font-size="20" font-weight="bold" fill="#0f172a">3.80 Acre</text>
+    <text x="787" y="30" text-anchor="middle" font-size="12" fill="#64748b">Classification</text>
+    <text x="787" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="#0f172a">Agricultural</text>
+  </g>
+
+  <!-- Ownership Data -->
+  <g transform="translate(50, 420)">
+    <rect x="0" y="0" width="900" height="280" fill="#ffffff" stroke="#1e3a8a" stroke-width="1.5"/>
+    <rect x="0" y="0" width="900" height="40" fill="#e2e8f0" stroke="#1e3a8a" stroke-width="1"/>
+    <text x="450" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e293b">Occupant / Co-Owners Schedule (कब्जेदार नोंदवही)</text>
+    <g transform="translate(30, 80)">
+      <text font-size="16" font-weight="bold" fill="#0f172a">1. Ganesh Dattatray Shinde (गणेश दत्तात्रय शिंदे) - 50% Share</text>
+      <text y="40" font-size="16" font-weight="bold" fill="#0f172a">2. Suresh Dattatray Shinde (सुरेश दत्तात्रय शिंदे) - 50% Share</text>
+      <text y="90" font-size="13" fill="#64748b">Class: Joint Occupant Class 1 (भोगवटादार वर्ग १)</text>
+      <text y="120" font-size="13" fill="#64748b">Status: Registered Cadastral Parcel</text>
+    </g>
+  </g>
+
+  <!-- Official Seal -->
+  <g transform="translate(500, 1100)">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="6 3"/>
+    <text y="-10" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">REVENUE RECORD</text>
+    <text y="15" text-anchor="middle" font-size="10" fill="#1e3a8a">GOVT OF MAHARASHTRA</text>
+  </g>
+</svg>

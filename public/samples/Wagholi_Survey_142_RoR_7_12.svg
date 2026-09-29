@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1350" width="1000" height="1350" style="background:#fcfbf7; font-family:'Segoe UI', Arial, sans-serif;">
+  <!-- Border and official header -->
+  <rect x="25" y="25" width="950" height="1300" fill="none" stroke="#2c3e50" stroke-width="3"/>
+  <rect x="35" y="35" width="930" height="1280" fill="none" stroke="#7f8c8d" stroke-width="1"/>
+  
+  <!-- Govt Emblem watermark / header -->
+  <g transform="translate(500, 75)" text-anchor="middle">
+    <circle cx="0" cy="15" r="28" fill="#ecf0f1" stroke="#34495e" stroke-width="1.5"/>
+    <text y="20" font-size="22" font-weight="bold" fill="#2c3e50">🏛️</text>
+    <text y="60" font-size="16" font-weight="bold" fill="#1a252f" letter-spacing="1">GOVERNMENT OF MAHARASHTRA / महाराष्ट्र शासन</text>
+    <text y="80" font-size="13" fill="#34495e">Department of Land Resources &amp; Revenue / भूमी अभिलेख विभाग</text>
+    <text y="105" font-size="20" font-weight="bold" fill="#871d1d" text-decoration="underline">गावाचे नमुना ७/१२ (अधिकार अभिलेख पत्रक)</text>
+    <text y="125" font-size="12" fill="#555">[ महाराष्ट्र जमीन महसूल अधिकार अभिलेख आणि नोंदवह्या (तयार करणे व चालू ठेवणे) नियम १९७१ यातील नियम ३, ५, ६ व ७ ]</text>
+  </g>
+
+  <!-- Location Table -->
+  <g transform="translate(50, 220)">
+    <rect x="0" y="0" width="900" height="70" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+    <line x1="225" y1="0" x2="225" y2="70" stroke="#2c3e50"/>
+    <line x1="450" y1="0" x2="450" y2="70" stroke="#2c3e50"/>
+    <line x1="675" y1="0" x2="675" y2="70" stroke="#2c3e50"/>
+    
+    <text x="110" y="25" text-anchor="middle" font-size="12" fill="#7f8c8d">राज्य (State)</text>
+    <text x="110" y="52" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e293b">महाराष्ट्र (Maharashtra)</text>
+    
+    <text x="337" y="25" text-anchor="middle" font-size="12" fill="#7f8c8d">जिल्हा (District)</text>
+    <text x="337" y="52" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e293b">पुणे (Pune)</text>
+    
+    <text x="562" y="25" text-anchor="middle" font-size="12" fill="#7f8c8d">तालुका (Tehsil)</text>
+    <text x="562" y="52" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e293b">हवेली (Haveli)</text>
+    
+    <text x="787" y="25" text-anchor="middle" font-size="12" fill="#7f8c8d">गाव (Village)</text>
+    <text x="787" y="52" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e293b">वाघोली (Wagholi)</text>
+  </g>
+
+  <!-- Parcel Section (Survey & Area) -->
+  <g transform="translate(50, 310)">
+    <rect x="0" y="0" width="900" height="90" fill="#f1f5f9" stroke="#2c3e50" stroke-width="1.5"/>
+    <line x1="180" y1="0" x2="180" y2="90" stroke="#2c3e50"/>
+    <line x1="360" y1="0" x2="360" y2="90" stroke="#2c3e50"/>
+    <line x1="540" y1="0" x2="540" y2="90" stroke="#2c3e50"/>
+    <line x1="720" y1="0" x2="720" y2="90" stroke="#2c3e50"/>
+
+    <text x="90" y="30" text-anchor="middle" font-size="12" fill="#64748b">भूमापन क्रमांक (Survey No)</text>
+    <text x="90" y="65" text-anchor="middle" font-size="22" font-weight="bold" fill="#0f172a">142</text>
+
+    <text x="270" y="30" text-anchor="middle" font-size="12" fill="#64748b">हिस्सा क्र. (Sub-division)</text>
+    <text x="270" y="65" text-anchor="middle" font-size="20" font-weight="bold" fill="#0f172a">142/1</text>
+
+    <text x="450" y="30" text-anchor="middle" font-size="12" fill="#64748b">खाते क्रमांक (Khata No)</text>
+    <text x="450" y="65" text-anchor="middle" font-size="20" font-weight="bold" fill="#0f172a">884</text>
+
+    <text x="630" y="30" text-anchor="middle" font-size="12" fill="#64748b">क्षेत्र (Plot Area)</text>
+    <text x="630" y="65" text-anchor="middle" font-size="20" font-weight="bold" fill="#0f172a">2.45 Acre</text>
+
+    <text x="810" y="30" text-anchor="middle" font-size="12" fill="#64748b">आकारणी (Assessment)</text>
+    <text x="810" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="#0f172a">₹ 14.50</text>
+  </g>
+
+  <!-- Ownership Table (कब्जेदार / मालक) -->
+  <g transform="translate(50, 420)">
+    <rect x="0" y="0" width="900" height="280" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="0" y="0" width="900" height="40" fill="#e2e8f0" stroke="#2c3e50" stroke-width="1"/>
+    
+    <line x1="450" y1="0" x2="450" y2="280" stroke="#2c3e50"/>
+    <line x1="680" y1="0" x2="680" y2="280" stroke="#2c3e50"/>
+    <line x1="780" y1="0" x2="780" y2="280" stroke="#2c3e50"/>
+
+    <text x="225" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">कब्जेदार / मालकाचे नाव (Owner's Name &amp; Parentage)</text>
+    <text x="565" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">कब्जा प्रकार (Class)</text>
+    <text x="730" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">हिस्सा (Share)</text>
+    <text x="840" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">फेरफार क्र.</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(20, 75)">
+      <text font-size="17" font-weight="bold" fill="#0f172a">बाळासाहेब तुकाराम जगताप (Balasaheb Tukaram Jagtap)</text>
+      <text y="25" font-size="13" fill="#64748b">वडील: तुकाराम गोविंद जगताप (Tukaram Govind Jagtap)</text>
+    </g>
+    <text x="565" y="90" text-anchor="middle" font-size="15" fill="#1e293b">भोगवटादार वर्ग १</text>
+    <text x="730" y="90" text-anchor="middle" font-size="17" font-weight="bold" fill="#15803d">100%</text>
+    <text x="840" y="90" text-anchor="middle" font-size="15" fill="#1e293b">4402</text>
+
+    <line x1="0" y1="130" x2="900" y2="130" stroke="#cbd5e1"/>
+
+    <!-- Mutation / Ferfar notes -->
+    <g transform="translate(20, 160)">
+      <text font-size="13" font-weight="bold" fill="#475569">इतर हक्क व फेरफार नोंदी (Other Rights &amp; Mutations):</text>
+      <text y="28" font-size="13" fill="#1e293b">• फेरफार क्र. ४४०२ दि. १५/०३/२०२४: वारस हक्काने नोंद मंजूर करण्यात आली.</text>
+      <text y="52" font-size="13" fill="#1e293b">• बँक ऑफ महाराष्ट्र शाखा वाघोली कडून घेतलेले शेती कर्ज बोजा रु. ५,००,०००/-</text>
+      <text y="76" font-size="13" fill="#1e293b">• भूमापन नकाशा प्रमाणे उत्तर-दक्षिण हद्द सरळ रेषेत नोंदलेली आहे.</text>
+    </g>
+  </g>
+
+  <!-- Land & Crops (गाव नमुना १२) -->
+  <g transform="translate(50, 720)">
+    <rect x="0" y="0" width="900" height="230" fill="#fdfcf8" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="0" y="0" width="900" height="35" fill="#fef3c7" stroke="#2c3e50" stroke-width="1"/>
+    
+    <text x="450" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#92400e">गाव नमुना १२ (पिकांची पाहणी नोंदवही - Crop &amp; Land Inspection)</text>
+    
+    <g transform="translate(20, 65)">
+      <text font-size="14" fill="#334155"><tspan font-weight="bold">जमीन वर्गवारी (Classification):</tspan> जिरायत शेतजमीन (Agricultural Dryland)</text>
+      <text y="35" font-size="14" fill="#334155"><tspan font-weight="bold">पाणी पुरवठ्याचे साधन (Water Source):</tspan> हंगामी विहीर व पावसाचे पाणी (Well &amp; Rainfed)</text>
+      <text y="70" font-size="14" fill="#334155"><tspan font-weight="bold">हंगाम (Season):</tspan> खरीप २०२५-२६ (Kharif)</text>
+      <text y="105" font-size="14" fill="#334155"><tspan font-weight="bold">लागवडीखालील मुख्य पिके (Crops):</tspan> सोयाबीन (१.५० एकर), ज्वारी (०.९५ एकर)</text>
+      <text y="140" font-size="14" fill="#334155"><tspan font-weight="bold">शेरा (Remarks):</tspan> ई-पीक पाहणी मोबाईल ॲप द्वारे शेतकर्‍याने स्वतः केलेली नोंद पडताळणी पूर्ण.</text>
+    </g>
+  </g>
+
+  <!-- Official Stamps & Signatures Section -->
+  <g transform="translate(50, 970)">
+    <rect x="0" y="0" width="900" height="330" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    
+    <!-- Revenue Stamp Seal -->
+    <g transform="translate(180, 140)">
+      <circle cx="0" cy="0" r="60" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6 3"/>
+      <circle cx="0" cy="0" r="50" fill="none" stroke="#1d4ed8" stroke-width="1.2"/>
+      <text y="-25" text-anchor="middle" font-size="10" font-weight="bold" fill="#1d4ed8" letter-spacing="1">TALATHI SAJJA WAGHOLI</text>
+      <text y="-5" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">तलाठी कार्यालय</text>
+      <text y="15" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">हवेली, पुणे</text>
+      <text y="32" text-anchor="middle" font-size="9" fill="#1d4ed8">दि. २६/०९/२०२६</text>
+    </g>
+
+    <!-- Barcode / QR placeholder -->
+    <g transform="translate(700, 120)">
+      <rect x="-60" y="-60" width="120" height="120" fill="#f8fafc" stroke="#64748b" stroke-width="1"/>
+      <!-- simulated QR code dots -->
+      <rect x="-50" y="-50" width="30" height="30" fill="#0f172a"/>
+      <rect x="20" y="-50" width="30" height="30" fill="#0f172a"/>
+      <rect x="-50" y="20" width="30" height="30" fill="#0f172a"/>
+      <rect x="-10" y="-10" width="20" height="20" fill="#0f172a"/>
+      <rect x="15" y="15" width="20" height="20" fill="#0f172a"/>
+      <text y="80" text-anchor="middle" font-size="10" fill="#475569">DIGITALLY VERIFIED</text>
+      <text y="95" text-anchor="middle" font-size="9" font-family="monospace" fill="#64748b">MH-PUN-HAV-142-2026</text>
+    </g>
+
+    <!-- Signatures -->
+    <g transform="translate(450, 260)" text-anchor="middle">
+      <path d="M -70 -20 Q -40 -40, 0 -20 T 70 -30" fill="none" stroke="#0f172a" stroke-width="1.8"/>
+      <text y="10" font-size="13" font-weight="bold" fill="#0f172a">तलाठी (Talathi)</text>
+      <text y="28" font-size="11" fill="#64748b">सज्जा वाघोली, ता. हवेली, जि. पुणे</text>
+    </g>
+  </g>
+</svg>
