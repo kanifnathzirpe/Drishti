@@ -1,0 +1,263 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Government revenue officer, verifier, operator or administrator profile",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 150 },
+        "email": { "type": "string", "maxLength": 200 },
+        "phone": { "type": "string", "maxLength": 30 },
+        "role": { "type": "string", "enum": ["OPERATOR", "VERIFIER", "SUPERVISOR", "OFFICIAL", "ADMIN"] },
+        "state": { "type": "string", "maxLength": 100 },
+        "district": { "type": "string", "maxLength": 100 },
+        "tehsil": { "type": "string", "maxLength": 100 },
+        "scope": { "type": "string", "maxLength": 100 },
+        "status": { "type": "string", "enum": ["ACTIVE", "INACTIVE"] },
+        "createdAt": { "type": "string" },
+        "lastLoginAt": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "role", "state", "district"]
+    },
+    "DocumentRecord": {
+      "title": "DocumentRecord",
+      "description": "Digitized land record document metadata and workflow state",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "batchId": { "type": "string", "maxLength": 128 },
+        "fileName": { "type": "string", "maxLength": 255 },
+        "fileUrl": { "type": "string", "maxLength": 1000 },
+        "fileType": { "type": "string", "maxLength": 100 },
+        "fileSize": { "type": "number" },
+        "fileHash": { "type": "string", "maxLength": 128 },
+        "pageCount": { "type": "number" },
+        "state": { "type": "string", "maxLength": 100 },
+        "district": { "type": "string", "maxLength": 100 },
+        "tehsil": { "type": "string", "maxLength": 100 },
+        "village": { "type": "string", "maxLength": 100 },
+        "documentType": { "type": "string", "maxLength": 100 },
+        "language": { "type": "string", "maxLength": 50 },
+        "uploadStatus": { "type": "string", "maxLength": 50 },
+        "processingStatus": { "type": "string", "maxLength": 50 },
+        "workflowStatus": { "type": "string", "maxLength": 50 },
+        "qualityScore": { "type": "number" },
+        "overallConfidence": { "type": "number" },
+        "priority": { "type": "string", "maxLength": 30 },
+        "uploadedBy": { "type": "string", "maxLength": 128 },
+        "uploadedByName": { "type": "string", "maxLength": 150 },
+        "assignedTo": { "type": "string", "maxLength": 128 },
+        "assignedToName": { "type": "string", "maxLength": 150 },
+        "assignedAt": { "type": "string" },
+        "slaDueDate": { "type": "string" },
+        "slaBreached": { "type": "boolean" },
+        "approvedBy": { "type": "string", "maxLength": 128 },
+        "approvedAt": { "type": "string" },
+        "lrmsSyncStatus": { "type": "string", "maxLength": 50 },
+        "lrmsRecordId": { "type": "string", "maxLength": 128 },
+        "lrmsSyncedAt": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "fileName", "state", "district", "tehsil", "village", "documentType", "processingStatus"]
+    },
+    "BatchRecord": {
+      "title": "BatchRecord",
+      "description": "Batch ingestion grouping for land records",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 200 },
+        "state": { "type": "string", "maxLength": 100 },
+        "district": { "type": "string", "maxLength": 100 },
+        "tehsil": { "type": "string", "maxLength": 100 },
+        "village": { "type": "string", "maxLength": 100 },
+        "totalDocuments": { "type": "number" },
+        "processedCount": { "type": "number" },
+        "status": { "type": "string", "maxLength": 50 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "name", "state", "district"]
+    },
+    "ExtractedRecord": {
+      "title": "ExtractedRecord",
+      "description": "Structured land record fields extracted via multilingual Gemini HTR/OCR",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "documentId": { "type": "string", "maxLength": 128 }
+      },
+      "required": ["id", "documentId"]
+    },
+    "ValidationResult": {
+      "title": "ValidationResult",
+      "description": "Rule evaluation result for land record validation",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "documentId": { "type": "string", "maxLength": 128 },
+        "ruleId": { "type": "string", "maxLength": 128 },
+        "ruleName": { "type": "string", "maxLength": 200 },
+        "status": { "type": "string", "enum": ["PASS", "FAIL", "SKIPPED"] },
+        "severity": { "type": "string", "enum": ["ERROR", "WARNING", "INFO"] },
+        "message": { "type": "string", "maxLength": 500 }
+      },
+      "required": ["id", "documentId", "ruleId", "status", "severity"]
+    },
+    "VerificationTask": {
+      "title": "VerificationTask",
+      "description": "Task assigned to verifiers for review and verification",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "documentId": { "type": "string", "maxLength": 128 },
+        "assignedTo": { "type": "string", "maxLength": 128 },
+        "status": { "type": "string", "maxLength": 50 },
+        "priority": { "type": "string", "maxLength": 30 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "documentId", "status"]
+    },
+    "AuditLog": {
+      "title": "AuditLog",
+      "description": "Immutable tamper-evident audit record of user and system actions",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "user": { "type": "string", "maxLength": 128 },
+        "userName": { "type": "string", "maxLength": 150 },
+        "role": { "type": "string", "maxLength": 50 },
+        "action": { "type": "string", "maxLength": 100 },
+        "entityType": { "type": "string", "maxLength": 100 },
+        "entityId": { "type": "string", "maxLength": 128 },
+        "details": { "type": "string", "maxLength": 1000 },
+        "timestamp": { "type": "string" }
+      },
+      "required": ["id", "user", "action", "timestamp"]
+    },
+    "FeedbackRecord": {
+      "title": "FeedbackRecord",
+      "description": "Corrections submitted during human verification for model fine-tuning",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "documentId": { "type": "string", "maxLength": 128 },
+        "fieldPath": { "type": "string", "maxLength": 200 },
+        "correctedBy": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "documentId", "fieldPath", "correctedBy"]
+    },
+    "NotificationItem": {
+      "title": "NotificationItem",
+      "description": "In-app alerts and notifications for assigned workflow events",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 200 },
+        "message": { "type": "string", "maxLength": 500 },
+        "type": { "type": "string", "maxLength": 50 },
+        "read": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "title", "message", "read"]
+    },
+    "IntegrationRecord": {
+      "title": "IntegrationRecord",
+      "description": "Synchronization log with National DILRMP / LRMS gateway",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "documentId": { "type": "string", "maxLength": 128 },
+        "system": { "type": "string", "maxLength": 50 },
+        "status": { "type": "string", "maxLength": 50 },
+        "externalRecordId": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "documentId", "system", "status"]
+    },
+    "ValidationRule": {
+      "title": "ValidationRule",
+      "description": "Statutory rule definition for automated revenue validation",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "ruleCode": { "type": "string", "maxLength": 50 },
+        "title": { "type": "string", "maxLength": 200 },
+        "description": { "type": "string", "maxLength": 500 },
+        "category": { "type": "string", "maxLength": 100 },
+        "severity": { "type": "string", "enum": ["ERROR", "WARNING", "INFO"] },
+        "enabled": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "ruleCode", "title", "severity", "enabled"]
+    },
+    "GisParcel": {
+      "title": "GisParcel",
+      "description": "Cadastral map parcel boundary polygon and centroid coordinates",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "documentId": { "type": "string", "maxLength": 128 },
+        "surveyNumber": { "type": "string", "maxLength": 50 },
+        "village": { "type": "string", "maxLength": 100 },
+        "areaAcres": { "type": "number" },
+        "status": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["id", "surveyNumber", "village"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "User profiles for revenue officers and administrators"
+    },
+    "/documents/{documentId}": {
+      "schema": { "$ref": "#/entities/DocumentRecord" },
+      "description": "All ingested land records with processing status and workflow states"
+    },
+    "/batches/{batchId}": {
+      "schema": { "$ref": "#/entities/BatchRecord" },
+      "description": "Batch processing envelopes for physical survey sheets"
+    },
+    "/extracted_records/{recordId}": {
+      "schema": { "$ref": "#/entities/ExtractedRecord" },
+      "description": "Structured extracted fields per document"
+    },
+    "/validation_results/{resultId}": {
+      "schema": { "$ref": "#/entities/ValidationResult" },
+      "description": "Validation check results for individual documents"
+    },
+    "/verification_tasks/{taskId}": {
+      "schema": { "$ref": "#/entities/VerificationTask" },
+      "description": "Verifier task queue entries"
+    },
+    "/audit_logs/{logId}": {
+      "schema": { "$ref": "#/entities/AuditLog" },
+      "description": "Immutable statutory audit trail"
+    },
+    "/feedback_records/{feedbackId}": {
+      "schema": { "$ref": "#/entities/FeedbackRecord" },
+      "description": "Machine learning correction feedback records"
+    },
+    "/notifications/{notificationId}": {
+      "schema": { "$ref": "#/entities/NotificationItem" },
+      "description": "In-app notifications"
+    },
+    "/integration_records/{integrationId}": {
+      "schema": { "$ref": "#/entities/IntegrationRecord" },
+      "description": "DILRMP national synchronization logs"
+    },
+    "/validation_rules/{ruleId}": {
+      "schema": { "$ref": "#/entities/ValidationRule" },
+      "description": "Revenue business validation rules"
+    },
+    "/gis_parcels/{parcelId}": {
+      "schema": { "$ref": "#/entities/GisParcel" },
+      "description": "Cadastral map parcel geometries"
+    }
+  }
+}
